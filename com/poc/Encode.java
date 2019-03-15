@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Encode {
 	public static void main(String... args) throws IOException {
-		File file = new File("/home/ubuntu/dev4/tmp_img/dot.png");
+		File file = new File("dot.png");
 		try(FileInputStream fileInputStreamReader = new FileInputStream(file);) {
 			byte[] bytes = new byte[(int)file.length()];
 	                fileInputStreamReader.read(bytes);
